@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniela Stefany Ballen">
+    <meta name="description" content="Página WEB de mi glosario personal de Ingeniería Mecatrónica">
+    <meta name="keywords" content="Glosario, Ingeniería Mecatrónica, Estudio, Conocimientos">
+    <title>Glosario Ingeniería Mecatrónica</title>
+    
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+    <style>
+        /* Aplicación del estilo proporcionado */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f1f8fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            background: linear-gradient(135deg, #26c6da, #4caf50);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #fff;
+            transition: background 0.3s ease;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #26c6da, #00acc1);
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            transition: background 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            transform: translateY(-4px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        details {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+
+        details summary {
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #007b3e;
+        }
+
+        details img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            width: 100%;
+            height: 70px;
+        }
+
+        footer .footer-text {
+            background: linear-gradient(135deg, #81c784, #4caf50);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 2px solid #fff;
+        }
+
+        footer .footer-text p {
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        footer .footer-text p:hover {
+            color: #418621;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <img src="../imagenes/logo-2024.png" alt="Logo Universidad">
+    <h1>Mi Glosario Personal de Ingeniería Mecatrónica</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../Index.html">Inicio</a></li>
+        <li><a href="./glosario_fundamentos_ingenieria.html">Glosario Ingeniería</a></li>
+        <li><a href="./glosario_pensamiento_algoritmico.html">Glosario Algoritmos</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <p><strong>A continuación encontrarás las definiciones de las principales palabras y expresiones relacionadas con la asignatura de fundamentos de ingeniería:</strong></p>
+        <details>
+            <summary>Persuasión</summary>
+            <article>
+                <p>La persuasión es el proceso de influir en las creencias, actitudes o comportamientos...</p>
+                <img src="../imagenes/persuacion1.jpg" alt="Persuasión">
+            </article>
+          </article>
+     </details>
+     <br><br>
+
+     <details>
+         <summary>Euclides</summary>
+         <article>
+              <p>Euclides fue un matemático griego, conocido como el "padre de la geometría". Su obra más destacada, "Los Elementos", fue una de las más influyentes en la historia de las matemáticas, estableciendo fundamentos clave en geometría, álgebra y teoría de números que siguen siendo estudiados hoy en día en la ingeniería y otras disciplinas científicas.</p>  
+              <img src="../imagenes/Euclides.jpg" > 
+            </article>
+     </details>     
+
+     <br><br>
+     <details>
+         <summary>Algoritmo de PageRank</summary>
+         <article>
+              <p>El algoritmo de PageRank es un sistema de clasificación de páginas web desarrollado por Larry Page y Sergey Brin, fundadores de Google. Utiliza un enfoque basado en enlaces entre páginas para determinar la relevancia y calidad de un sitio web. Este algoritmo se utiliza ampliamente en motores de búsqueda para mejorar los resultados de búsqueda mediante la asignación de puntuaciones a páginas web.</p> 
+              <img src="../imagenes/PageRank.jpg" >       
+            </article>
+     </details>           
+     <br><br>
+
+     <details>
+         <summary>Instrucciones</summary>
+         <article>
+              <p>Las instrucciones son comandos o directrices que indican el paso a paso necesario para realizar una tarea o ejecutar un proceso. En programación, las instrucciones constituyen los bloques fundamentales de un algoritmo, cada una de ellas representando una operación específica que el sistema debe ejecutar.</p>
+              <img src="../imagenes/instrucciones.png" > 
+            </article>
+     </details>        
+     <br><br>
+
+     <details>
+         <summary>Ordenadores</summary>
+         <article>
+              <p>Los ordenadores son dispositivos electrónicos que procesan, almacenan y gestionan datos a través de operaciones matemáticas y lógicas. Se componen de componentes físicos (hardware) y programas (software) que permiten realizar tareas que van desde cálculos complejos hasta la gestión de bases de datos y la ejecución de programas interactivos.</p> 
+              <img src="../imagenes/ordenador-portatil-u-ordenador-de-sobremesa.jpg" > 
+            </article>
+     </details>           
+     <br><br>
+
+     <details>
+         <summary>Algoritmo de Burbuja</summary>
+         <article>
+              <p>El algoritmo de burbuja es un algoritmo simple de ordenación que compara elementos adyacentes en una lista y los intercambia si están en el orden incorrecto. Este proceso se repite hasta que toda la lista queda ordenada. Aunque es fácil de entender, su eficiencia es limitada, lo que lo hace adecuado solo para listas pequeñas.</p> 
+              <img src="../imagenes/Ordendeburbuja.png" > 
+            </article>
+     </details>           
+     <br><br>
+
+     <details>
+         <summary>Ingeniería</summary>
+         <article>
+              <p>La ingeniería es la aplicación de principios científicos, matemáticos y técnicos para resolver problemas prácticos y mejorar el bienestar humano. Abarca una variedad de disciplinas, como la ingeniería civil, electrónica, mecánica y de software, y busca crear soluciones innovadoras que optimicen procesos, estructuras y sistemas en diversos campos de la industria.</p> 
+              <img src="../imagenes/ingenieria.jpg" > 
+            </article>
+     </details>           
+     <br><br>
+
+     <details>
+         <summary>Investigación</summary>
+         <article>
+              <p>La investigación es el proceso sistemático de indagar, explorar y analizar fenómenos, conceptos o procesos con el fin de generar nuevo conocimiento o resolver problemas específicos. En ingeniería, la investigación se enfoca en desarrollar nuevas tecnologías, mejorar métodos existentes y aplicar soluciones innovadoras a desafíos técnicos.</p> 
+              <img src="../imagenes/investigacion.png" > 
+            </article>
+     </details>           
+     <br><br>
+
+     <details>
+         <summary>Disciplinas</summary>
+         <article>
+              <p>Las disciplinas son ramas del conocimiento que se especializan en áreas concretas de estudio. En el contexto de la ingeniería, las disciplinas incluyen áreas como la ingeniería mecánica, electrónica, civil, informática, y más. Cada disciplina se enfoca en aspectos específicos de la tecnología y la ciencia, y contribuye al desarrollo y la innovación en diversas industrias.</p> 
+              <img src="../imagenes/Disciplinas.jpg" > 
+            </article>
+     </details>           
+     <br><br>
+
+  </section>    
+  <hr>
+</main>
+
+<footer>
+<div class="footer-text">
+  <p>&copy; UNIVERSIDAD DE CUNDINAMARCA  | Todos los derechos reservados | 2024 </p>
+</div>
+
+</footer>
+
+</body>
+</html>

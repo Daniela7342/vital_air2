@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vital Air">
+    <meta name="description" content="Formulario de contacto para Vital Air, purificador de aire portátil.">
+    <title>Formulario de Contacto - Vital Air</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background: linear-gradient(135deg, rgba(130, 220, 236, 1), rgba(0, 128, 21, 0.8));
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #cabecera {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #cabecera h1 {
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px;
+        }
+
+        #cabecera h2 {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 30px 20px;
+            margin: 0 20px;
+        }
+
+        form p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            text-align: center;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        label span {
+            display: block;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #007b3e;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007b3e;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 128, 21, 0.5);
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"] {
+            background-color: #007b3e;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005f2b;
+        }
+
+        input[type="reset"] {
+            background-color: #c83232;
+            color: white;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #a52929;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form[name='formularioContacto']");
+            const fields = form.querySelectorAll("input[type='text']");
+
+            form.addEventListener("submit", (event) => {
+                let valid = true;
+
+                fields.forEach((field) => {
+                    if (!field.value.trim()) {
+                        alert(`${field.name} no puede estar vacío o contener solo espacios en blanco.`);
+                        field.focus();
+                        valid = false;
+                        return;
+                    }
+                });
+
+                if (!valid) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div id="cabecera">
+            <h1>¡Contáctanos!</h1>
+            <h2>Vital Air - Purificador de Aire</h2>
+        </div>
+        
+        <form name="formularioContacto" method="get" action="web_en_construccion.html">
+            <p>¿Tienes alguna consulta o comentario? Envíanos tus datos y nos pondremos en contacto.</p>
+
+            <label for="nombre">
+                <span>Nombre:</span>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" />
+            </label>
+            
+            <label for="apellidos">
+                <span>Apellidos:</span>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Ingresa tus apellidos" />
+            </label>
+            
+            <label for="email">
+                <span>Correo Electrónico:</span>
+                <input id="email" type="text" name="email" placeholder="Ingresa tu correo electrónico" />
+            </label>
+            
+            <div class="form-buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
